@@ -60,7 +60,7 @@ nav .nav-link.active::after{
 
     
 }
-h2::after{
+.h2-background::after{
     content: "";
     width: 100%;
     height: 30px;   
@@ -99,12 +99,19 @@ h2::after{
 }
 .about-text .about-btns .btn-download:hover {
     background-color: #fff !important;
-    color: #000 !important;
     
 
 }
+.about-text .about-btns .btn-download:hover a{
+ color: #000 !important;
+}
 .about-text .about-btns .btn-contact:hover{
     background-color: #000 !important;
+    color: #fff !important;
+
+}
+.about-text .about-btns .btn-contact:hover a{
+
     color: #fff !important;
 
 }
@@ -148,4 +155,155 @@ h2::after{
 .Portfolio .nav-pills .nav-link.active::after{
     width: 100%;
     
+}
+
+.Portfolio .card .overlay{
+    border: 10px solid #e4e4e4;
+    position: absolute;
+    width: 100%;
+    top:100%;
+    left: 100%;   
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+.Portfolio .card .overlay .card-icons{
+
+    cursor: pointer;
+    position: absolute;
+    bottom: 38%;
+}
+.Portfolio .card .overlay i:hover {
+
+    background-color: #fff !important;
+    border: #000 1px solid;
+    border-radius: 50%;
+    color: #000 !important;
+}
+.Portfolio .card .overlay .card-icons i{
+    background-color: #000;
+    border: #000 1px solid;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 5px;
+
+}
+.Portfolio .card{
+    position: relative;
+}
+.Portfolio .card:hover .overlay{
+top: 0;
+left: 0;
+bottom:0 ;
+opacity: 1;
+}
+/*--------------clients----------------*/
+.clients img{
+    width: 10%;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    
+
+}
+.clients .carousel .carousel-item{
+    position: relative;
+}
+.clients .carousel button{
+    /* position: absolute !important;
+    bottom: 10px !important;
+    z-index: 5;
+    color: rebeccapurple; */
+}
+.clients .carousel .carousel-indicators .active{
+    background-color: gray !important;
+}
+.counter .counter-part i{
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+}
+.counter .counter-part number{
+   font-size: 30px;
+   font-weight: bolder;
+   font-family: 'Montserrat', sans-serif;
+   
+}
+.team .layer .overlay{
+    position: absolute;
+    width: 100%;
+    top:100%;
+    left: 100%;   
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.5s;
+    transform: rotateY(360deg) ;
+    background-color: #fff;
+    margin: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+.team  i:hover{
+
+    background-color: #fff !important;
+    border: #000 1px solid;
+    border-radius: 50%;
+    color: #000 !important;
+}
+.team .layer .overlay .icons{
+
+    cursor: pointer;
+}
+.team .layer .overlay .icons i{
+    background-color: #000;
+    border: #000 1px solid;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    
+
+}
+.team .layer{
+    position: relative;
+}
+.team .team-card:hover .overlay{
+top: 0;
+left: 0;
+bottom:0 ;
+right: 0;
+opacity: 1;
+}
+/*------------contact------------*/
+.contact .contact-card i{
+    font-size: 25px;
+    border: 1px solid #f4f4f4;
+    border-radius: 50px;
+    background-color: #e0d8d8;
+    padding: 12px 12px;
+}
+.contact .contact-card i:hover{
+background-color: #000;
+color: #fff;
+}
+.contact .input input{
+    outline: none;
+    border: none;
+    padding: 8px 8px;
+}
+.contact .input textarea{
+    outline: none;
+    border: none;
+    height: 20vh;
+}
+.contact .input-btn button:hover{
+  background-color: #fff !important;
+  color: #000 !important;
 }
